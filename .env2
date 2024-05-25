@@ -1,0 +1,9 @@
+# Configura tu API de WooCommerce
+WOO_URL="http://XXX.com"
+CONSUMER_KEY="ck_XXXXXXXXXXX"
+CONSUMER_SECRET="cs_XXXXXXXXXX"
+
+# Configuración de la API de WordPress
+WORDPRESS_URL = "http://XXXX.com/wp-json/wp/v2/media"
+WORDPRESS_USER = ""
+WORDPRESS_PASSWORD = ""
