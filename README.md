@@ -11,8 +11,8 @@ This project generates product sheets in PDF format from CSV data and uploads th
 
 1. Clone this repository:
     ```bash
-    git clone https://github.com/your-username/repository-name.git
-    cd repository-name
+    git clone https://github.com/JMViJi/woocommerce-product-sheets.git
+    cd woocommerce-product-sheets
     ```
 
 2. Create and activate a virtual environment:
