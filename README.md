@@ -42,7 +42,31 @@ This project generates product sheets in PDF format from CSV data and uploads th
     WORDPRESS_USER=your_wordpress_user
     WORDPRESS_PASSWORD=your_wordpress_password
     ```
+### Obtaining WooCommerce API Keys
 
+To obtain the API keys for your WooCommerce store, follow these steps:
+
+1. Log in to your WooCommerce store's WordPress admin dashboard.
+2. Go to **WooCommerce > Settings**.
+3. Click on the **Advanced** tab, then select **REST API**.
+4. Click the **Add Key** button.
+5. Fill in the **Description** (e.g., "Product Manager Script").
+6. Select the **User** you want to generate the key for in the **User** field.
+7. Set **Permissions** to **Read/Write**.
+8. Click the **Generate API Key** button.
+9. You will be shown a **Consumer Key** and a **Consumer Secret**. Copy these keys and paste them into your `.env` file as `CONSUMER_KEY` and `CONSUMER_SECRET`, respectively.
+
+### Obtaining WordPress Application Passwords
+
+To obtain the application passwords for your WordPress site, follow these steps:
+
+1. Log in to your WordPress admin dashboard.
+2. Go to **Users > Profile**.
+3. Scroll down to the **Application Passwords** section.
+4. Enter a name for the new application password (e.g., "Product Manager Script") and click **Add New Application Password**.
+5. A new password will be generated (Example: XXXX XXXX XXXX XXXX XXXX XXXX). Copy this password and use it as `WORDPRESS_PASSWORD` in your `.env` file.
+6. Your WordPress username should be used as `WORDPRESS_USER` in the `.env` file.
+   
 ## Usage
 
 Ensure you have the product data in a CSV file located in the `data` folder. You also need a `template.svg` file in the `templates` folder to style the product sheet, and desired fonts in the `fonts` folder.
